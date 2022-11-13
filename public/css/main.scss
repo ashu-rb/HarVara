@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@300;400;500;600&display=swap');
+
+body, html{
+    padding: 0;
+    margin: 0;
+    font-family: 'Anek Telugu', sans-serif;
+}
+
+
+
+
+
+#theme-switcher:checked ~ section{
+    background-color: black !important;
+    color: #d3d3d9 !important;
+}
+
+section{
+    background-color: #d3d3d9;
+    color: black;
+    padding: 20px 30px;
+    transition: all 300ms ease-in-out;
+    .brand, .header-title{
+        color: #fff;
+    }
+}
+
+section:not(.header-wrapper){
+    padding: 80px 30px;
+}
+
+.main-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: 800px) {
+        display: block;
+        text-align: center;
+    }
+
+
+    .brand{
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .menu{
+        display: flex;
+        align-items: center;
+        div{
+            margin-left: 20px;
+            transition: all 300ms ease-in-out;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+
+        a, label{
+            letter-spacing: 2px;
+            text-decoration: none;
+            color: #d3d3d9;
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+.header-wrapper{
+    background-image: url("../img/img.png");
+    background-size: cover;
+    background-position: center;
+
+    .header-title{
+        min-height: 400px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+
+        h1{
+            font-size: 60px;
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: 0;
+            letter-spacing: 6px;
+            @media screen and (max-width: 800px) {
+                font-size: 44px;
+            }
+
+        }
+        h2{
+            font-size: 28px;
+            font-weight: 400;
+            margin-top: 0;
+            margin-bottom: 0;
+            letter-spacing: 10px;
+            text-transform: uppercase;
+            font-style: italic;
+            @media screen and (max-width: 800px) {
+                font-size: 18px;
+            }
+        }
+    }
+
+
+    &.has-video-bg{
+        position: relative;
+        background-image: none;
+        *{
+            position: relative;
+            z-index: 1;
+        }
+
+        .header-title{
+            min-height: 600px;
+        }
+        video{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            object-fit: cover;
+            object-position: center;
+            z-index: 0;
+        }
+    }
+}
+
+.tutorial{
+    .content{
+        text-align: center;
+        padding: 30px;
+
+        .video{
+            margin: 60px auto;
+        }
+    }
+}
+
+.history{
+    .content{
+        display: flex;
+        max-width: 1280px;
+        margin: auto;
+
+        @media screen and (max-width: 800px) {
+            display: block;
+            max-width: 100%;
+        }
+
+        .img{
+            min-width: 320px;
+            padding-top: 60px;
+            text-align: center;
+            img{
+                min-width: 100%;
+                @media screen and (max-width: 800px) {
+                    max-width: 320px;
+                    min-width: 60%;
+                }
+
+            }
+        }
+
+        .text{
+            padding: 0 30px;
+            h2{
+                margin-top: 0;
+            }
+            p{
+                letter-spacing: 2px;
+                //line-height: 28px;
+            }
+        }
+    }
+}
+
+
+.slide{
+    .slide-header{
+        max-width: 300px;
+        margin: auto;
+    }
+    .slider-images{
+        text-align: center;
+        max-width: 80%;
+        margin: 40px auto auto;
+        img{
+            max-width: 100%;
+            border-radius: 4px;
+            box-shadow: 0 0 10px #00000020;
+        }
+    }
+}
+
+#theme-switcher{
+    display: none;
+}
+
+footer{
+    padding: 20px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    font-style: italic;
+}
