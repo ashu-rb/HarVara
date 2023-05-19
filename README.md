@@ -1,5 +1,5 @@
-# HarVara 
-# Best AgriTech Hack @ Harvest Hacks by Major Hacking League
+## HarVara 
+# Won Best AgriTech Hack Prize @ Harvest Hacks by Major League Hacking 
 
 ## Inspiration
 My inspiration was to join the Green Revolution as a part it,the main goal was to save soil and join campaign held in India, which talked about infertility in soil and that our food is less nutritional than 100 years ago.
