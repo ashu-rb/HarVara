@@ -8,7 +8,7 @@ My inspiration was to join the Green Revolution as a part it,the main goal was t
 I decided to be a part of the campaign by creating a website that provides a digital solution to the unawareness about quality fertilizers specific to crops. I have built a range slider and an image slider in combination to create a system that generates specific fertilizers based on quality, type of use, and certain specifics. For example, for wheat, the most natural and healthy fertilizer is rotten farm manure, but a more effective is nitrogen fertilizer. And this information is presented through the range slider. Also, I have followed the trend of putting a dark mode changer.
 
 ## How we built it
-I built it using HTML 5, CSS, and JavaScript.
+I built it using HTML, CSS, and JavaScript.
 
 ## Challenges we ran into
 I ran into challenges when coding the range sliders because their application on this website is quite unique.
